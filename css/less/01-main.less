@@ -1,0 +1,126 @@
+:root {
+	--clr-base: #676A71;
+	--clr-title: #010612;
+	--clr-att: #149AD6;
+	--clr-att-second: #009821;
+	--clr-att-light: #89CCEB;
+	--clr-light: #90939A;
+	--clr-bg-light: #EFF1F4;
+	--clr-alert: #FF3347;
+
+	--min: 360px;
+	--max: 1200px;
+    
+    --paddingContainer: 15px;
+
+	--filter-dark: brightness(0) grayscale(1);
+	--filter-white: brightness(0) invert(1);
+
+	font-size: 10px;
+}
+.sl-wrap:not(.swiper-slide)~.sl-wrap {
+	display: none;
+}
+.elm-hidden {
+	display: none;
+}
+.ft {
+	font-family: 'Inter Tight', sans-serif;
+	* {
+		font-family: 'Inter Tight', sans-serif;
+	}
+}
+/* ----------------------------------- *\
+			main styles
+\* ----------------------------------- */
+body {
+	color: var(--clr-base);
+	background: var(--clr-bg-light);
+    font-size: 14px;
+    line-height: (18/14);
+}
+p, ul, ol, table, blockquote, .bq-text {
+	position: relative;
+    margin-bottom: 12px;
+	img {
+		max-width: 100%;
+	}
+	&:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+li {
+	position: relative;
+}
+.menu, .list {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+    }
+}
+a.link-main, .link-main {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a {
+	&.link-phone, &.link-email, &.link-location {
+		
+	}
+}
+
+h1, .h1-title,
+h2, .h2-title,
+h3, .h3-title,
+h4, .h4-title,
+h5, .h5-title,
+h6, .h6-title {
+	display: block;
+	position: relative;
+    font-weight: bold;
+    margin: 12px 0;
+	font-size: 16px;
+	line-height: (20/16);
+	font-weight: 600;
+	color: var(--clr-title);
+    &:first-child {
+        margin-top: 0;
+    }
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.h1-title, h1 {
+	font-size: 24px;
+	line-height: (28/24);
+}
+.text-att, .title-att {
+	display: inline;;
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+	display: inline;;
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+	display: inline;;
+    text-align: center;
+}
+.text-title, .title-title {
+	display: inline;;
+    color: var(--clr-title);
+}
+.text-line, .title-line {
+	white-space: nowrap;
+}

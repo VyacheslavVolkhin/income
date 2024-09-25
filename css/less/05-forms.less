@@ -1,0 +1,152 @@
+/* ----------------------------------- *\
+			forms elements styles
+\* ----------------------------------- */
+.frm-field {
+	&:has(#timer) {
+		&+.field-link {
+			display: none;
+		}
+	}
+	&:has(#timer.timer-end) {
+		display: none;
+		&+.field-link {
+			display: block;
+		}
+	}
+}
+.frm-row,
+.frm-field,
+.frm-row-submit {
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+	margin: 0 -2px;
+}
+.frm-row-submit {
+	padding-top: 12px;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+	margin: 0 0 4px 0;
+	padding: 0 2px;
+	&.field-link {
+		font-weight: 500;
+		a {
+			display: inline-block;
+			padding: 10px 0;
+		}
+	}
+	&.field-info {
+		text-align: center;
+		font-size: 12px;
+		line-height: 16px;
+		color: var(--clr-light);
+		padding-top: 8px;
+		a {
+			color: inherit;
+		}
+	}
+	&.field-center {
+		text-align: center;
+	}
+}
+.frm-message {
+	display: none;
+	animation: fadein ease 0.2s;
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 12px;
+	line-height: 16px;
+	padding-left: 24px;
+	color: var(--clr-base);
+	&:before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background: url(../img/icons/info.svg) center no-repeat;
+		background-size: 100% auto;
+		top: 8px;left: -4px;
+		margin-top: -12px;
+	}
+	&.ms-error {
+		color: var(--clr-alert);
+		&:before {
+			background-image: url(../img/icons/error.svg);
+		}
+	}
+	&.ms-succefull {
+		color: var(--clr-alert);
+		&:before {
+			background-image: url(../img/icons/succefull.svg);
+		}
+	}
+}
+.frm-select {
+	position: relative;
+	display: block;
+	overflow: hidden;
+    line-height: 1;
+	input {
+		display: block;
+		position: absolute;
+		top: 0;left: 0;
+		width: 0;height: 0;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+
+
+.frm-select {
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		&:before, &:after {
+			
+		}
+		&:after {
+			border-radius: 0;
+			border: none;
+			background: url(../img/icons/chk.svg) center / 24px auto no-repeat;
+			opacity: 0;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+}
