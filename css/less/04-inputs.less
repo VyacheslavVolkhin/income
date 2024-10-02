@@ -108,6 +108,13 @@ select.form-input:required:invalid {
 		background-color: var(--clr-att-second);
 		border-color: var(--clr-att-second);
 	}
+	&.button-text-att {
+		background: none;
+		border-radius: 0;
+		border: none;
+		color: var(--clr-att);
+		
+	}
 	&.button-clear {
 		width: auto;
 		height: auto;
@@ -245,22 +252,10 @@ select.form-input:required:invalid {
         }
     }
     &.ico-close {
-        &:after, &:before {
-            width: 20px;
-            height: 2px;
-            top: 50%;
-            left: 50%;
-            bottom: auto;
-            right: auto;
-            margin: -1px 0 0 -10px;
-            background: var(--clr-base);
-        }
         &:before {
-            .t-rotate(45deg);
-        }
-        &:after {
-            .t-rotate(-45deg);
-        }
+			background-image: url(../img/icons/close.svg);
+			background-size: 32px auto;
+		}
     }
     &.button-soc {
         img, svg {
