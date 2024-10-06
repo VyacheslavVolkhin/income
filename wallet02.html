@@ -31,48 +31,84 @@
                 <div class="section-content-box">
                     <div class="section-title-box">
                         <a href="" class="btn-action-ico ico-arrow ico-arrow-prev button-back"></a>
-                        <div class="section-title">Регистрация</div>
+                        <div class="section-title">Вывод средств</div>
                     </div>
                 </div>
-                <div class="section-content-box section-full">
-                    <div class="form-title-box">
-                        <div class="h1-title">Общие данные</div>
-                        <p>Укажите полное имя и почту</p>
-                    </div>
+                <div class="section-content-box section-full no-ptop">
                     <div class="form-box">
                         <div class="frm-row">
+                            <div class="frm-field field-sep-medium">
+                                <div class="item-tile-total">
+                                    <div class="tile-title-wrap">
+                                        <div class="tile-price" data-unit=" ₽">0</div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-info">
+                                            <div class="tile-price" data-unit=" ₽">минимум 500</div>
+                                        </div>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/folder.svg" alt="">
+                                            </div>
+                                            <div class="tile-price" data-unit=" ₽">34 000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit no-ptop">
                             <div class="frm-field">
-                                <input type="text" class="form-input" placeholder="Фамилия" maxlength="64" required>
-                                <div class="frm-message ms-error">Введен неверный Фамилия</div>
+                                <button type="submit" class="btn" disabled>Вывести средства</button>
+                            </div>
+                        </div>
+                        <div class="form-title-box">
+                            <div class="h4-title">Реквизиты для вывода средств</div>
+                            <p>Данные заполнены автоматически на основании подписанного договора</p>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">Номер расчетного счёта</div>
+                                    <input type="text" class="form-input" value="4081 7810 5756 6482 1244">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">ИНН</div>
+                                    <input type="text" class="form-input" value="776545453">
+                                </div>
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">КПП</div>
+                                    <input type="text" class="form-input" value="543256677">
+                                </div>
                             </div>
                         </div>
                         <div class="frm-row">
                             <div class="frm-field">
-                                <input type="text" class="form-input" placeholder="Имя" maxlength="64" required>
-                                <div class="frm-message ms-error">Введен неверный Имя</div>
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">Название банка</div>
+                                    <input type="text" class="form-input" value="АО Сбербанк">
+                                </div>
                             </div>
                         </div>
                         <div class="frm-row">
                             <div class="frm-field">
-                                <input type="text" class="form-input" placeholder="Отчество" maxlength="64" required>
-                                <div class="frm-message ms-error">Введен неверный Отчество</div>
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">БИК</div>
+                                    <input type="text" class="form-input" value="044525225">
+                                </div>
                             </div>
                         </div>
-                        <div class="frm-field">
-                            <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:[a-zA-Z0-9-]+)*$/" class="form-input inp-error" placeholder="Почта" required>
-                            <div class="frm-message ms-error">Введите корректную почту</div>
-                        </div>
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <input type="text" class="form-input" placeholder="Город проживания" maxlength="64" required>
-                                <div class="frm-message ms-error">Введен неверный Город проживания</div>
+                        <div class="frm-row-submit no-ptop">
+                            <div class="frm-field field-full">
+                                <a href="" class="btn button-text-att">Изменить реквизиты</a>
                             </div>
                         </div>
-                        <div class="frm-row-submit">
-                            <div class="frm-field">
-                                <button type="submit" class="btn" disabled>Продолжить</button>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </form>
@@ -80,6 +116,46 @@
         </div>
         <!-- /page -->
 
+        <!--bottom-panel-box-->
+        <div class="bottom-panel-box cnt-section">
+            <div class="inner-wrap">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="btn-menu" data-count="3">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu01.svg" alt="">
+                            </div>
+                            <div class="button-title">Мои заявки</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu02.svg" alt="">
+                            </div>
+                            <div class="button-title">Вакансии</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu active">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu03.svg" alt="">
+                            </div>
+                            <div class="button-title">Кошелек</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu04.svg" alt="">
+                            </div>
+                            <div class="button-title">Кабинет</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/bottom-panel-box-->
         <!--popup-outer-box-->
         <div class="popup-outer-box" id="popup-verify-step01">
             <div class="popup-box">
