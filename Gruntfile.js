@@ -18,6 +18,8 @@ module.exports = function (grunt) {
                         header: '<%= fixturesPath %>/**/header.html',
                         footer: '<%= fixturesPath %>/**/footer.html',
                         bottompanel: '<%= fixturesPath %>/**/bottompanel.html',
+                        filter: '<%= fixturesPath %>/**/filter.html',
+                        filterorder: '<%= fixturesPath %>/**/filterorder.html',
                     },
                     data: {
                         version: "0.1.0",

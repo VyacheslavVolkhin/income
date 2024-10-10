@@ -14,31 +14,34 @@
 //timer
 const timerElement = document.getElementById('timer');
 
-let totalTime = 2 * 60; 
-
-function startTimer() {
-  const timerInterval = setInterval(() => {
-    totalTime--;
-    
-    if (totalTime < 0) {
-      clearInterval(timerInterval);
-      timerElement.classList.add('timer-end')
-    } else {
-      const minutes = Math.floor(totalTime / 60);
-      const seconds = totalTime % 60;
-      
-      const formattedTime = pad(minutes) + ":" + pad(seconds);
-      
-      timerElement.textContent = formattedTime;
-    }
-  }, 1000);
+if (timerElement) {
+	
+	let totalTime = 2 * 60; 
+	
+	function startTimer() {
+	  const timerInterval = setInterval(() => {
+		totalTime--;
+		
+		if (totalTime < 0) {
+		  clearInterval(timerInterval);
+		  timerElement.classList.add('timer-end')
+		} else {
+		  const minutes = Math.floor(totalTime / 60);
+		  const seconds = totalTime % 60;
+		  
+		  const formattedTime = pad(minutes) + ":" + pad(seconds);
+		  
+		  timerElement.textContent = formattedTime;
+		}
+	  }, 1000);
+	}
+	
+	function pad(value) {
+	  return value < 10 ? '0' + value : value;
+	}
+	
+	startTimer();
 }
-
-function pad(value) {
-  return value < 10 ? '0' + value : value;
-}
-
-startTimer();
 
 
 //js popup wrap
@@ -191,3 +194,27 @@ document.querySelectorAll(".popup-outer-box").forEach(function (element) {
 		}
 	});
 });
+
+
+
+// filter actions
+const filterButtonOpen = document.querySelector('.js-filter-open');
+const filterButtonClose = document.querySelector('.js-filter-close');
+const filterButtonApply = document.querySelector('.js-filter-apply');
+if (filterButtonOpen) {
+	filterButtonOpen.addEventListener("click", function(even) {
+			document.body.classList.add("filter-active");
+			even.preventDefault();
+			return false
+	})
+	filterButtonClose.addEventListener("click", function(even) {
+			document.body.classList.remove("filter-active");
+			even.preventDefault();
+			return false
+	})
+	filterButtonApply.addEventListener("click", function(even) {
+			document.body.classList.remove("filter-active");
+			even.preventDefault();
+			return false
+	})
+}

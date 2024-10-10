@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/inputmask.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- page -->
+        <div class="page-full">
+
+            <form action="/" class="main-form-box">
+                <div class="section-content-box">
+                    <div class="section-title-box">
+                        <a href="" class="btn-action-ico ico-arrow ico-arrow-prev button-back"></a>
+                        <div class="section-title">Смена реквизитов</div>
+                    </div>
+                </div>
+                <div class="section-content-box section-full no-ptop">
+                    <div class="form-box">
+                        <div class="form-title-box">
+                            <div class="h1-title">Оставьте заявку</div>
+                            <p>Изменение реквизитов требует переподписание договора и прохождение верификации заново</p>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input">
+                                    <div class="field-input-title">Какие реквизиты хотите изменить и почему?</div>
+                                    <textarea class="form-input"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-full">
+                                <a href="" class="btn button-disabled">Отправить заявку</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <!-- /page -->
+
+        <!--bottom-panel-box-->
+        <div class="bottom-panel-box cnt-section">
+            <div class="inner-wrap">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="btn-menu" data-count="3">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu01.svg" alt="">
+                            </div>
+                            <div class="button-title">Мои заявки</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu02.svg" alt="">
+                            </div>
+                            <div class="button-title">Вакансии</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu active">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu03.svg" alt="">
+                            </div>
+                            <div class="button-title">Кошелек</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-menu">
+                            <div class="button-ico">
+                                <img src="./img/icons/menu04.svg" alt="">
+                            </div>
+                            <div class="button-title">Кабинет</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/bottom-panel-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-verify-step01">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Добро пожаловать в МT-Agent! Пройдите верификацию для получения полного доступа</div>
+                            <p>Для полного доступа к выводу заработанных средств, методическим материалам по поиску вакансий и бесплатному обучающему курсу необходимо пройти верификацию и подписать договор. После этого вы получите полный доступ ко всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Пройти верификацию</a>
+                                </div>
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium button-text-att">Продолжить без верификации</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-verify-step02">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Ваш запрос принят – ожидайте звонка от нашего специалиста</div>
+                            <p>В&nbsp;ближайшее время наш&nbsp;сотрудник свяжется с&nbsp;вами по&nbsp;телефону, указанному в&nbsp;личном кабинете, для&nbsp;уточнения данных и&nbsp;оформления договора. После&nbsp;успешного завершения верификации вы&nbsp;получите полный доступ ко&nbsp;всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Хорошо, жду звонка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-verify-step03">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-succefull.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Верификация успешно завершена!</div>
+                            <p>Поздравляем! Теперь вам&nbsp;доступны все&nbsp;функции сервиса. Подписанный договор и&nbsp;документы отправлены на&nbsp;вашу почту.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Отлично, а что еще?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-verify-step04">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Методические материалы для&nbsp;легкого старта</div>
+                            <p>Перед&nbsp;началом работы скачайте методические материалы. Они&nbsp;помогут без проблем находить персонал и&nbsp;зарабатывать. Сохраните их, чтобы&nbsp;всегда иметь под&nbsp;рукой.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-flex">
+                                    <a href="" class="btn button-medium button-second">Скачать материалы</a>
+                                </div>
+                                <div class="frm-field">
+                                    <a href="" class="btn button-medium" disabled>Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-verify-step05">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Бесплатный курс для&nbsp;новичков в&nbsp;профессии</div>
+                            <p>Отличные новости! Мы&nbsp;создали бесплатный курс по&nbsp;массовому подбору персонала, который поможет вам&nbsp;быстро разобраться в&nbsp;профессии. Он всегда доступен для вас во вкладке&nbsp;<a href=""><b>«Кабинет»</b></a>.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-flex">
+                                    <a href="" class="btn button-medium button-second">Пройти курс</a>
+                                </div>
+                                <div class="frm-field">
+                                    <a href="" class="btn button-medium button-text-att">К вакансиям</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-wallet01">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Вывод средств недоступен</div>
+                            <p>Пройдите верификацию и подпишите договор, чтобы получить доступ к выводу средств. Это поможет обеспечить безопасность ваших транзакций и защитить ваши интересы.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Пройти верификацию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-wallet02">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Ваш запрос принят – ожидайте звонка от нашего специалиста</div>
+                            <p>В ближайшее время наш сотрудник свяжется с вами по телефону, указанному в личном кабинете, для уточнения данных и оформления договора. После успешного завершения верификации вы получите полный доступ ко всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Хорошо, жду звонка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-vacantion01">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Расчет заработной платы осуществляется по формуле с&nbsp;вычетом НДФЛ</div>
+                            <div class="frm-field-text-att">(Рабочая ставка × Дни × Часы) − 13% = ЗП </div>
+                            <p>Например, при ставке 400 ₽/час, за 90 дней вахты (по 11 рабочих часов в день) расчет зарплаты будет следующим:</p>
+                            <div class="frm-field-text-att">(400 × 11 × 90) − 13% = 344 520 ₽</div>
+                            <p>344 520 ₽ — это сумма, которую сотрудник получит за всю вахту на руки.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Понятно</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-vacantion02">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Оплата проезда из любой точки страны </div>
+                            <p>Мы берём на себя все расходы на проезд для кандидатов из любой точки России до места работы, что вляется важным преимуществом при подборе персонала.</p>
+                            <p>Например, если кандидат в Краснодаре, а рабочий объект в Москве, мы купим ему билет на поезд, и он доедет за наш счёт.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Понятно</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-vacantion03">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Сроки вахты и отпуска</div>
+                            <p>Кандидаты могут выбрать один из предложенных вариантов вахты, при этом зарплата и длительность отпуска будут зависеть от выбранного срока. Например:</p>
+                            <div class="frm-field-text-att">90/45 – 90 дней вахты и 45 дней отпуска</div>
+                            <p>Компания предоставляет оплачиваемый межвахтовый отпуск, который можно взять перед началом следующей вахты.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Понятно</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-vacantion04">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Подтвердите согласия кандидата</div>
+                            <p>Предоставляя контакт кандидата, вы подтверждаете, что он ознакомлен с условиями вакансии и согласен на трудоустройство и обработку персональных данных</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Подтверждаю</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-view">
+            <div class="popup-box">
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Сначала показывать</div>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check01" checked>
+                                        <label for="popup-check01">По умолчанию</label>
+                                    </div>
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check02">
+                                        <label for="popup-check02">Наибольшее количество мест</label>
+                                    </div>
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check03">
+                                        <label for="popup-check03">Наименьшее количество мест</label>
+                                    </div>
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check04">
+                                        <label for="popup-check04">Срочные</label>
+                                    </div>
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check05">
+                                        <label for="popup-check05">Наибольшую выплату за человека</label>
+                                    </div>
+                                    <div class="frm-select-check">
+                                        <input type="radio" name="popup-check" id="popup-check06">
+                                        <label for="popup-check06">Наименьшую выплату за человека</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Применить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-lk01">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Ваш запрос принят – ожидайте звонка от нашего специалиста</div>
+                            <p>В ближайшее время наш сотрудник свяжется с вами по телефону, указанному в личном кабинете, для уточнения данных и оформления договора. После успешного завершения верификации вы получите полный доступ ко всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Хорошо, жду звонка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-lk02">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Пройдите верификацию для полного доступа</div>
+                            <p>Для полного доступа к выводу заработанных средств, методическим материалам по поиску вакансий и бесплатному обучающему курсу необходимо пройти верификацию и подписать договор. После этого вы получите полный доступ ко всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Пройти верификацию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-lk03">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check-load.svg" alt="">
+                            </div>
+                            <div class="form-title h3-title">Ваш запрос принят – ожидайте звонка от нашего специалиста</div>
+                            <p>В ближайшее время наш сотрудник свяжется с вами по телефону, указанному в личном кабинете, для уточнения данных и оформления договора. После успешного завершения верификации вы получите полный доступ ко всем возможностям сервиса.</p>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium">Хорошо, жду звонка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-message" id="popup-message">
+            <div class="popup-box">
+                <div class="popup-content-wrap">
+                    <!--popup-form-box-->
+                    <div class="popup-form-box">
+                        <div class="frm-title-wrap">
+                            <div class="form-title h3-title">Вы уверены, что хотите удалить аккаунт?</div>
+                        </div>
+                        <div class="frm-action-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium js-popup-close">Отмена</a>
+                                </div>
+                                <div class="frm-field field-full">
+                                    <a href="" class="btn button-medium button-text-alert">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/popup-form-box-->
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>
